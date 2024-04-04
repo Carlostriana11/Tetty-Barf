@@ -1,0 +1,114 @@
+:root{
+    --primary: #f5e6a6;
+    --white: #fff;
+    --gray: #2a324b;
+}
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    background-color: var(--primary);
+    height: 100vh;
+}
+.menu {
+    border-bottom: .3rem solid var(--gray);
+}
+.menu-list{
+    display: none;
+}
+.menu-toggle:checked ~ .menu-list {
+    display: block;
+}
+.visually-hidden{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: .1px;
+    width: .1px;
+    margin: -.1px;
+    padding: 0;
+    border: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+}
+@media screen and (max-width: 560px) {
+    /* Disposición vertical */
+    .menu {
+        flex-direction: column;
+    }
+    
+    .menu-icon {
+        display: block;
+        margin: 2rem 1rem;
+    }
+    
+    .menu-list {
+        display: none;
+        overflow: auto;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+    }
+    
+    .menu-toggle:checked ~ .menu-list {
+        display: flex;
+    }
+    
+    /* Estilos para submenús */
+    .sub-menu {
+        display: none;
+    }
+    
+    .menu-item:hover .sub-menu {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Disposición horizontal */
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-item a{
+        text-decoration: none;
+    }
+    nav.menu {
+        flex-direction: row;
+        text-align: center;
+        padding: 2rem;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    
+    /* Estilos para el botón de menú */
+    .menu-toggle {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+    li.menu-item {
+        list-style: none;
+    }
+}
