@@ -1,114 +1,132 @@
-:root{
-    --primary: #f5e6a6;
-    --white: #fff;
-    --gray: #2a324b;
-}
-body {
-    font-family: sans-serif;
-    font-weight: lighter;
-    color: var(--white);
-    background-color: var(--primary);
-    height: 100vh;
-}
-.menu {
-    border-bottom: .3rem solid var(--gray);
-}
-.menu-list{
-    display: none;
-}
-.menu-toggle:checked ~ .menu-list {
-    display: block;
-}
-.visually-hidden{
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: .1px;
-    width: .1px;
-    margin: -.1px;
+* {
+    margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
-.menu {
+body {
+    font-family: 'Nunito',sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+}
+header {
+    position: fixed;
+    width: 100%;
+
+}
+header {
+    height: 60px;
+    background-color: #FFF;
     display: flex;
-    flex-direction: column;
+    padding: 0 20px;
+    justify-content: space-around;
 
 }
-@media screen and (max-width: 560px) {
-    /* Disposición vertical */
-    .menu {
-        flex-direction: column;
+.menu-toggle {
+    display: none;
+    margin-left: auto;
+    color: black;
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0 1rem;
+}
+
+#menu {
+    /* margin-left: auto; */
+    padding: 0 0 0 5rem;
+}
+
+#menu ul li {
+    display: inline-block;
+    color: black;
+}
+.menu ul {
+    list-style: none;
+}
+
+#menu ul li a,
+.menu-lg, .menu ul li a {
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+.menu-lg {
+    padding: 0 0 0 35rem;
+}
+
+
+#menu ul li a:hover {
+    background-color: #fff;
+}
+
+.show {
+    height: 368px !important;
+}
+
+
+@media (max-width: 540px) {
+    .header {
+        padding: 30px;
     }
-    
-    .menu-icon {
+    .menu-toggle{
         display: block;
-        margin: 2rem 1rem;
     }
-    
-    .menu-list {
-        display: none;
-        overflow: auto;
-        height: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-
+    #menu {
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        /* border: 1px solid #eee; */
+        overflow: hidden;
+        transition: .3s ease-out;
+        padding: 0;
     }
-    
-    .menu-toggle:checked ~ .menu-list {
-        display: flex;
-    }
-    
-    /* Estilos para submenús */
-    .sub-menu {
-        display: none;
-    }
-    
-    .menu-item:hover .sub-menu {
-        display: flex;
-        flex-direction: column;
-        position: static;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    /* Disposición horizontal */
-    .menu {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .menu-item a{
-        text-decoration: none;
-    }
-    nav.menu {
-        flex-direction: row;
+    #menu ul li {
+        display: block;
         text-align: center;
-        padding: 2rem;
-        flex-direction: row;
-        padding: 1rem;
     }
-
-    
-    /* Estilos para el botón de menú */
-    .menu-toggle {
+    .menu {
         display: none;
     }
-    
-    .menu-icon {
-        display: none;
-    }
-    
-    .menu-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 3rem;
-        padding: 0 2rem;
-    }
-    li.menu-item {
+    #menu ul li a,
+    .lg a {
+        color: black;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        width: 100%;
         list-style: none;
+    }
+    #menu ul li a:hover {
+        background: #fff;
+    }
+    .lg li {
+        list-style: none;
+        height: 2rem;
+    }
+    
+    .container {
+        padding: 10px;
     }
 }
