@@ -1,7 +1,10 @@
 
-/* *{
-    border: solid 1px red;
-} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid 1px red; */
+}
 
 
 
@@ -11,9 +14,10 @@
 }
 
 .section1-box{
-    height: 550px;
+    height: 554px;;
     background-color: #173b33;
     padding: 10px;
+    padding: 2rem 4rem;
 }
 
 .sectio1-box-messaje{
@@ -41,9 +45,8 @@ font-size: 17px;
 
 .Bootom{
     padding: 20px;
-    margin: 0px;
-    width: 14rem;
-    margin-top: 27px;
+    width: 16rem;
+    margin-top: 28px;
     
 }
 
@@ -64,3 +67,33 @@ font-size: 17px;
     font-family: "Paytone One", sans-serif;
     font-size: 17px;
 }
+
+/* .section1-box-img-plato{
+    width: 170px;
+    position: relative;
+    
+}
+.section1-box-plato{
+    height: 122px;
+    margin-top: 39px;s
+    text-align: right;
+} */
+
+
+@media(min-width:786px){
+    .section-principal{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .section1-imagen{
+        width: 100%;
+        height: 100%;
+    }
+
+    .section1-box-img{
+        width: 100%;
+       
+    }
+}
+
