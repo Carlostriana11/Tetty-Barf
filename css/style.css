@@ -4,8 +4,231 @@
     box-sizing: border-box;
 }
 
+p{
+    font-size: 15px;
+}
+h2,
+h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+
 .content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    column-gap: 10px;
+}
+
+.content-main{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin: 1rem;
+}
+.content-img{
+    grid-column: 1/3;
+    grid-row: 3/6;
+    margin: 1rem;
+}
+.content-meal{
+    grid-column: 1/2;
+    grid-row: 6/8;
+    margin: 1rem;
+}
+.content-quality{
+    grid-column: 2/3;
+    grid-row: 6/8;
+    margin: 1rem;
+}
+.content-health{
+    grid-column: 1/2;
+    grid-row: 8/10;
+    margin: 1rem;
+}
+.content-nutrition{
+    grid-column: 2/3;
+    grid-row: 8/10;
+    margin: 1rem;
+}
+
+.content-button{
+    grid-column: 1/3;
+    grid-row: 10/11;
+    margin: 1rem;
+    text-align: center;
+}
+img {
+    width: 349px;
+    height: 324px;
+    align-items: center;
+    justify-content: center;
+}
+img.content-comida-img {
+    margin: 0 auto;
+}
+.content-img {
+    display: flex;
+    margin: 12px;
+    position: relative;
+    width: 100%;
+}
+.content-img-min {
+    width: 40px;
+    height: 40px;
+    margin: 0 6rem;
+}
+.content-main{
+    padding: 0 2rem;
+}
+.content-main h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 27px;
+    padding: 1rem 0;
+}
+
+.content-main p{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.content-health p {
+    text-align: center;
+}
+
+
+.content-health h3 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.content-nutrition p {
+    text-align: center;
+}
+
+.content-nutrition h3 {
+    padding: 1.6rem 1rem;
+    text-align: center;
+}
+.content-meal p {
+    text-align: center;
+}
+
+.content-meal h3 {
+    padding: 1rem;
+    text-align: center;
+}
+.content-quality p {
+    text-align: center;
+}
+
+.content-quality h3{
+    padding: 1rem;
+    text-align: center;
+}
+.grado-humano {
+    position: relative;
+    width: 45vw;
+    height: 9vw;
+}
+.content-link {
+    text-align: center;
+}
+.content-button a {
+    background-color: orangered;
+    padding: 1.2rem 2rem;
+    border-radius: .3rem;
+    color: white;
+    /* list-style: none; */
+    text-decoration: none;
+    font-size: 19px;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+@media (min-width: 780px) {
+    .content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 10px;
+        margin: 0 2rem;
+    }
+    .content-img-min{
+        margin: 0 11rem;
+    }
+    .content-main{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        margin: 1rem;
+    }
+    .content-main h2{
+        padding: 1rem 0 0 4rem;
+    }
+    .content-main p {
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+        width: 80rem;
+        padding: 1rem 23rem;
+    }
+    .content-img{
+        grid-column:2/3;
+        grid-row: 2/4;
+        margin: 1rem;
+        
+    }
+    .content-meal{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 1rem;
+    }
+    .content-meal p {
+        text-align: center;
+        margin: 0 4rem;
+    }
+    .content-quality{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 1rem;
+        width: 23rem;
+    }
+    .content-quality p {
+        text-align: center;
+        margin: 0 4rem;
+    }
+    .content-health{
+        grid-column: 3/5;
+        grid-row: 2/3;
+        margin: 1rem;
+    }
+    .content-health p {
+        text-align: center;
+        margin: 0 4rem;
+    }
+    .grado-humano {
+        /* position: relative; */
+        /* width: 45vw; */
+        height: 4vw;
+    }
+    .content-nutrition{
+        grid-column: 3/5;
+        grid-row: 3/4;
+        margin: 1rem;
+    }
+    .content-nutrition p {
+        text-align: center;
+        margin: 0 6rem;
+    }
+    
+    .content-button{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        margin: 5rem 0 0 3.5rem;
+    }
 }
