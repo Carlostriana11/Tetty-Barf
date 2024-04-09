@@ -24,7 +24,7 @@ header {
     background-color: #FFF;
     display: flex;
     padding: 0 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 .menu-toggle {
@@ -73,6 +73,9 @@ header {
 .menu-lg {
     padding: 0 0 0 35rem;
 }
+#menu ul li:last-child{
+    display: none;
+}
 
 
 #menu ul li a:hover {
@@ -90,6 +93,7 @@ header {
     }
     .menu-toggle{
         display: block;
+        align-items: center;
         padding: 0 .5rem;
     }
     .fa-bars:before, .fa-navicon:before {
@@ -127,7 +131,8 @@ header {
         background: #c8c3c3;
     }
     .logo{
-        padding: 0 0 0 8rem;
+        position: relative;
+        left: 31px;
     }
     .lg li {
         list-style: none;
@@ -144,6 +149,7 @@ header {
     }
     .menu-toggle{
         display: block;
+        flex-basis: 3rem;
     }
     #menu {
         background: #fff;
@@ -164,6 +170,9 @@ header {
     .menu {
         display: none;
     }
+    #menu ul li:last-child{
+        display: block;
+    }
     #menu ul li a,
     .lg a {
         color: black;
@@ -176,7 +185,9 @@ header {
         background: #fbfafa;
     }
     .logo{
-        padding: .1rem 0 0 auto;
+        flex-basis: 100vw;
+        display: flex;
+        justify-content: center;
     }
     .lg li {
         list-style: none;
