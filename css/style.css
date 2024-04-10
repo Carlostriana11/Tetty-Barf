@@ -1,4 +1,6 @@
-*{
+
+* {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,7 +72,6 @@ img.content-comida-img {
 .content-img {
     display: flex;
     margin: 12px;
-    position: relative;
     width: 100%;
 }
 .content-img-min {
@@ -127,11 +128,11 @@ img.content-comida-img {
 }
 
 .content-quality h3{
-    padding: 1rem;
+    padding: .4rem 0 1.3rem 0;
     text-align: center;
 }
 .grado-humano {
-    position: relative;
+    
     width: 45vw;
     height: 9vw;
 }
@@ -165,7 +166,7 @@ img.content-comida-img {
     .content-main{
         grid-column: 1/5;
         grid-row: 1/2;
-        margin: 1rem;
+        margin: 3rem 1rem;
     }
     .content-main h2{
         padding: 1rem 0 0 4rem;
@@ -225,10 +226,210 @@ img.content-comida-img {
         text-align: center;
         margin: 0 6rem;
     }
+    .content-nutrition h3 {
+        padding: 1.1rem 0 1rem 0;
+        text-align: center;
+    }
     
     .content-button{
         grid-column: 1/4;
         grid-row: 4/5;
         margin: 5rem 0 0 3.5rem;
+    }
+}
+
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+}
+header {
+    position: fixed;
+    width: 100%;
+
+}
+header {
+    height: 60px;
+    background-color: #FFF;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+
+}
+.menu-toggle {
+    display: none;
+    margin-left: auto;
+    color: black;
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0 1rem;
+}
+
+#menu {
+    /* margin-left: auto; */
+    padding: 0 0 0 5rem;
+}
+
+#menu ul li {
+    display: inline-block;
+    color: black;
+}
+.menu ul {
+    list-style: none;
+}
+
+#menu ul li a,
+.menu-lg, .menu ul li a {
+    display: inline-block;
+    position: relative;
+    color: rgb(9, 8, 8);
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+.menu-lg {
+    padding: 0 0 0 35rem;
+}
+#menu ul li:last-child{
+    display: none;
+}
+
+
+#menu ul li a:hover {
+    background-color: #bebbbb;
+}
+
+.show {
+    height: 368px !important;
+}
+
+
+@media (max-width: 540px) {
+    .header {
+        padding: 30px;
+    }
+    .menu-toggle{
+        display: block;
+        align-items: center;
+        padding: 0 .5rem;
+    }
+    .fa-bars:before, .fa-navicon:before {
+        content: "\f0c9";
+        padding: .3rem;
+    }
+    #menu {
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        /* border: 1px solid #eee; */
+        overflow: hidden;
+        transition: .3s ease-out;
+        padding: 0;
+    }
+    #menu ul li {
+        display: block;
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    #menu ul li a,
+    .lg a {
+        color: black;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        width: 100%;
+        list-style: none;
+    }
+    #menu ul li a:hover {
+        background: #c8c3c3;
+    }
+    .logo{
+        position: relative;
+        left: 31px;
+    }
+    .lg li {
+        list-style: none;
+        height: 2rem;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
+@media (max-width: 830px) {
+    .header {
+        padding: 30px;
+    }
+    .menu-toggle{
+        display: block;
+        flex-basis: 3rem;
+
+    }
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        /* border: 1px solid #eee; */
+        overflow: hidden;
+        transition: .3s ease-out;
+        padding: 0;
+    }
+    #menu ul li {
+        display: block;
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    #menu ul li:last-child{
+        display: block;
+    }
+    #menu ul li a,
+    .lg a {
+        color: black;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        width: 100%;
+        list-style: none;
+    }
+    #menu ul li a:hover {
+        background: #fbfafa;
+    }
+    .logo{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 44px;
+    }
+    .lg li {
+        list-style: none;
+        height: 2rem;
+    }
+    
+    .container {
+        padding: 10px;
     }
 }
