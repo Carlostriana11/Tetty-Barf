@@ -118,6 +118,9 @@ cite.text-veterinarian {
     margin: 0;
     flex-basis: 33%;
     margin-bottom: 70px;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
     
 }
 
