@@ -163,8 +163,9 @@ button.botton-footer {
 input.input-footer {
     border: none;
     border-radius: 4px;
-    width: 69%;
+    width: 10rem;
 }
+
 
 .text-preline-footer {
     padding-bottom: 40px;
