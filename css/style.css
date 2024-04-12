@@ -6,7 +6,8 @@
 }
 
 p{
-    font-size: 15px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2,
 h3{
@@ -27,7 +28,7 @@ header {
 }
 header {
     height: 60px;
-    background-color: #FFF;
+    background-color: #dbdbdb;
     display: flex;
     padding: 0 20px;
     justify-content: space-between;
@@ -41,6 +42,7 @@ header {
     font-size: 25px;
     cursor: pointer;
     margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .logo a {
@@ -95,6 +97,12 @@ header {
 
 
 @media (max-width: 540px) {
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        /* column-gap: 10px; */
+    }
     .header {
         padding: 30px;
     }
@@ -197,27 +205,33 @@ header {
         flex-basis: 100%;
         display: flex;
         justify-content: center;
-        padding-left: 44px;
+        padding-left: 2px;
     }
     .lg li {
         list-style: none;
         height: 2rem;
     }
-    .container {
-        padding: 10px;
-    }
+    
+    
 }
 /* estilos de la seccion1 */
+.section-principal {
+    
+    width: 100%;
+
+}
 .section1-imagen{
     width: 100%;
-    height: 256px;
+    height: 100%;
+    object-fit: fill;
+    margin: 3rem 0 0 0 ;
 }
 
 .section1-box{
     height: 554px;;
     background-color: #173b33;
     padding: 10px;
-    padding: 2rem;
+    padding: .5rem;
 }
 
 .sectio1-box-messaje{
@@ -235,10 +249,10 @@ header {
 }
 
 .section1-box-parrafo{
-margin: 15px;
-color: white;
-font-family: "Paytone One", sans-serif;
-font-size: 17px;
+    margin: 15px;
+    color: white;
+    font-family: "Paytone One", sans-serif;
+    font-size: 17px;
 }
 
 .Bootom{
@@ -259,17 +273,17 @@ font-size: 17px;
 
 
 /* estilos de la seccion de informacion sobre la alimentacion */
-.content{
+/* .content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(11, 1fr);
     column-gap: 10px;
-}
+} */
 
 .content-main{
     grid-column: 1/3;
     grid-row: 1/3;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 .content-img{
     grid-column: 1/3;
@@ -279,22 +293,30 @@ font-size: 17px;
 .content-meal{
     grid-column: 1/2;
     grid-row: 6/8;
-    margin: 1rem;
+    /* width: 205px; */
+    height: 261px;
+    margin: 0 1rem;
 }
 .content-quality{
     grid-column: 2/3;
     grid-row: 6/8;
-    margin: 1rem;
+    /* width: 205px; */
+    height: 261px;
 }
 .content-health{
     grid-column: 1/2;
     grid-row: 8/10;
-    margin: 1rem;
+    /* width: 205px; */
+    margin: 0 1rem;
+    height: 261px;
+    margin: 0 1rem;
 }
 .content-nutrition{
     grid-column: 2/3;
     grid-row: 8/10;
-    margin: 1rem;
+    /* width: 205px; */
+    margin: 0 1rem;
+    height: 261px;
 }
 
 .content-button{
@@ -314,13 +336,21 @@ img.content-comida-img {
 }
 .content-img {
     display: flex;
-    margin: 12px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin: 12px; */
+    width: 93%;
 }
 .content-img-min {
     width: 40px;
     height: 40px;
-    margin: 0 6rem;
+    margin: .5rem 0 0 5rem;
+}
+.max  {
+    margin: .5rem 0 0 5rem;
+}
+.maxm  {
+    margin: .5rem 0 0 6rem;
 }
 .content-main{
     padding: 0 2rem;
@@ -337,11 +367,13 @@ img.content-comida-img {
     text-transform: uppercase;
     font-size: 15px;
     text-align: center;
+    
 }
 
 
 .content-health p {
     text-align: center;
+    padding: 0 .5rem 0 .5rem;
 }
 
 
@@ -352,6 +384,7 @@ img.content-comida-img {
 
 .content-nutrition p {
     text-align: center;
+    padding: 0 .5rem 0 .5rem;
 }
 
 .content-nutrition h3 {
@@ -360,6 +393,7 @@ img.content-comida-img {
 }
 .content-meal p {
     text-align: center;
+    padding: 0 .5rem 0 .5rem;
 }
 
 .content-meal h3 {
@@ -368,15 +402,16 @@ img.content-comida-img {
 }
 .content-quality p {
     text-align: center;
+    padding: 0 .5rem 0 .5rem;
 }
 
 .content-quality h3{
-    padding: .4rem 0 1.3rem 0;
+    padding: 1.8rem 0 1.3rem 0;
     text-align: center;
 }
 .grado-humano {
     
-    width: 45vw;
+    width: 30vw;
     height: 9vw;
 }
 .content-link {
@@ -403,7 +438,20 @@ img.content-comida-img {
     }
     .section1-imagen{
         width: 100%;
-        height: 100%;
+        height: 91.6%;
+        object-fit: cover;
+    }
+    .section1-imagen {
+        /* width: 100%; */
+        /* height: 256px; */
+        /* object-fit: cover; */
+        margin: 3rem 0 0 0;
+    }
+    .section1-box {
+        height: 554px;
+        background-color: #173b33;
+        /* padding: 10px; */
+        padding: 3rem 2rem;
     }
 
     .section1-box-img{
@@ -416,11 +464,11 @@ img.content-comida-img {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        column-gap: 10px;
-        margin: 0 2rem;
+        /* column-gap: 10px; */
+        /* margin: 0 2rem; */
     }
     .content-img-min{
-        margin: 0 11rem;
+        margin: 0 12rem;
     }
     .content-main{
         grid-column: 1/5;
@@ -447,6 +495,8 @@ img.content-comida-img {
         grid-column: 1/2;
         grid-row: 2/3;
         margin: 1rem;
+        width: 417px;
+        height: 261px;
     }
     .content-meal p {
         text-align: center;
@@ -456,16 +506,23 @@ img.content-comida-img {
         grid-column: 1/2;
         grid-row: 3/4;
         margin: 1rem;
-        width: 23rem;
+        width: 417px;
+        height: 261px;
     }
     .content-quality p {
         text-align: center;
         margin: 0 4rem;
     }
+    .content-quality h3 {
+        padding: 0.5rem 0 1.3rem 0;
+        text-align: center;
+    }
     .content-health{
         grid-column: 3/5;
         grid-row: 2/3;
         margin: 1rem;
+        width: 417px;
+        height: 261px;
     }
     .content-health p {
         text-align: center;
@@ -480,20 +537,22 @@ img.content-comida-img {
         grid-column: 3/5;
         grid-row: 3/4;
         margin: 1rem;
+        width: 417px;
+        height: 261px;
     }
     .content-nutrition p {
         text-align: center;
         margin: 0 6rem;
     }
     .content-nutrition h3 {
-        padding: 1.1rem 0 1rem 0;
+        padding: 1.1rem 0 1.3rem 0;
         text-align: center;
     }
     
     .content-button{
-        grid-column: 1/4;
+        grid-column: 2/3;
         grid-row: 4/5;
-        margin: 5rem 0 0 3.5rem;
+        margin: 5rem 0 0 2rem;
     }
 }
 
