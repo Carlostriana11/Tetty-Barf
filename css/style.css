@@ -157,6 +157,27 @@ header {
     .container {
         padding: 10px;
     }
+    /* inio de los estilos del footer */
+    .pre-footer{
+        flex-direction:row ;
+    }
+    .container{
+        max-width: 92.5%;
+    }
+    .container-final-line{
+        flex-direction: row;
+        align-items: center;
+    }
+    ul.last-list-footer{
+        flex-direction: row;
+            align-items: center;
+
+    }
+    /* estilos de la seccion para especialistas */
+    .information-veterinarians{
+        justify-content: space-around;
+        flex-direction: row;
+    }
 }
 @media (max-width: 830px) {
     .header {
@@ -429,6 +450,247 @@ img.content-comida-img {
     /* align-items: center; */
     /* text-align: center; */
 }
+/* aqui van los estilos de la seccion de informacion */
+section.veterinarians-box {
+    padding: 4rem 0;
+    letter-spacing: .5px;
+}
+
+.title-veterinarians{
+    display: flex;
+    justify-content: center;
+}
+
+
+.information-veterinarians{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.veterinarian{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+.text-veterinarian{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.photo-veterinarians{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 110px;
+    width: 110px;
+    
+}
+
+cite.text-veterinarian {
+    margin: 27px 0;
+}
+
+
+
+/* aqui empieza todos los estil  */
+
+    .footer {
+        background-color: #173b33;
+        color: white;
+        letter-spacing: .5px;
+    }
+
+    .pre-footer {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    .container{
+        max-width: 96%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    h2, h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: white;
+    }
+    .veterinarian {
+        margin: 27px 0;
+        color: white;
+    }
+    section.veterinarians-box {
+        padding: 4rem 0;
+        letter-spacing: .5px;
+        background-color: rgb(16, 51, 16);
+    }
+
+    /* aqui se le da comienzo a los estilos del footer */
+    section.veterinarians-box {
+        padding: 4rem 0;
+        letter-spacing: .5px;
+    }
+    
+    .title-veterinarians{
+        display: flex;
+        justify-content: center;
+    }
+    blockquote.veterinarian {
+        color: white;
+        text-align: center;
+    }
+    
+    .information-veterinarians{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .veterinarian{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        flex-basis: 33%;
+    }
+    
+    .text-veterinarian{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footer {
+        background-color: #173b33;
+        color: white;
+        letter-spacing: .5px;
+    }
+    
+    .pre-footer {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    .container{
+        max-width: 96%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .menu-footer{  
+        list-style: none;
+        padding: 0;
+    }
+    
+    .menu-list-footer{
+        color: white;
+        padding: 0;
+        margin: 0;
+        flex-basis: 33%;
+        margin-bottom: 70px;
+        width: 100%;
+        padding: 40px 2rem;
+        box-sizing: border-box;
+        
+    }
+    
+    .input-list-footer{
+        margin: auto;
+        margin-bottom: 70px;
+        padding: 0;
+        margin: 0;
+        flex-basis: 33%;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-box-footer {
+        align-items: normal;
+        display: flex;
+        /* position: relative; */
+        width: 100%;
+    }
+    
+    a.menu-link{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        margin-bottom: 24px;
+    }
+    
+    
+    button.botton-footer {
+        background-color: #717377;
+        border-radius: 4px;
+        padding: 14px 24px;
+        margin-left: 6px;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+    
+    input.input-footer {
+        border: none;
+        border-radius: 4px;
+        width: 10rem;
+    }
+    
+    
+    .text-preline-footer {
+        padding-bottom: 40px;
+    }
+    
+    
+    .container-final-line {
+        width: 100%;
+    }
+    
+    .container-final-footer {
+        /* text-align: center; */
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 24px;
+    }
+    
+    
+    .container-final-line {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 2px dotted #fff;
+    
+    }
+    ul.last-list-footer {
+        text-decoration: none;
+        color: white;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: .7rem;
+    }
+    
+    .style-link-footer{
+        color: white;
+        text-decoration: none;
+    }
 
 @media (min-width: 780px) {
     .section-principal{
@@ -553,6 +815,66 @@ img.content-comida-img {
         grid-column: 2/3;
         grid-row: 4/5;
         margin: 5rem 0 0 2rem;
+    }
+     /* aqui comienza la seccion de informacion de especialistas */
+
+    .information-veterinarians{
+        justify-content: space-around;
+    }
+    .veterinarian {
+        /* display: flex; */
+        /* justify-content: start; */
+        text-align: center;
+        /* flex-direction: column; */
+        flex-basis: 33%;
+    }
+    blockquote.text-veterinarian,
+    .blockquote.veterinarian  {
+        color: white;
+    }
+    h2, h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: white;
+    }
+    .veterinarian {
+        margin: 27px 0;
+        color: white;
+    }
+    section.veterinarians-box {
+        padding: 4rem 0;
+        letter-spacing: .5px;
+        background-color: rgb(16, 51, 16);
+    }
+    /* aqui comienza los estilos del footer para una pantalla grande */
+    .pre-footer{
+        flex-direction:row ;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .container-final-line{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .text-final-line-footer{
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: left;
+        flex-direction: column;
+        display: flex
+        
+    }
+
+    .text-final-line-footer {
+        margin-top: 20px;
+    }
+    ul.last-list-footer{
+        flex-direction: row;
+        align-items: center;
+
     }
 }
 
