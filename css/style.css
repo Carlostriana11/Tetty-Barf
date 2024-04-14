@@ -96,13 +96,7 @@ header {
 }
 
 
-@media (max-width: 540px) {
-    .content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(11, 1fr);
-        /* column-gap: 10px; */
-    }
+@media (min-width:520) and (max-width: 540px) {
     .header {
         padding: 30px;
     }
@@ -178,6 +172,64 @@ header {
         justify-content: space-around;
         flex-direction: row;
     }
+    .content-img{
+        display: none;
+    }
+    .content-img-m{
+        display: block;
+        
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .content-main h2 {
+        padding: 2rem 24rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+    .content-main p {
+        padding: 0px 17rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px ;
+    }
+    .fila{
+        width: 25%;
+        flex-wrap: wrap;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .image{
+        width: 50%;
+    }
+    img.content-comida-img {
+        width: 415px;
+        height: 366px;
+        object-fit: cover;
+        margin: 2rem 0 1rem 7.5rem;
+    }
+     
+    .column p {
+        padding: 0 1rem 8.6rem 1rem;
+    }
+    .content-button a {
+        padding: 1.5rem 2rem;
+        background-color: orangered;
+        /* text-align: center; */
+        /* text-decoration: none; */
+        color: white;
+        font-size: 20px;
+        border-radius: .5rem;
+        border: radio;
+    }
 }
 @media (max-width: 830px) {
     .header {
@@ -185,7 +237,7 @@ header {
     }
     .menu-toggle{
         display: block;
-        flex-basis: 3rem;
+        flex-basis: 3.8rem;
 
     }
     #menu {
@@ -226,7 +278,7 @@ header {
         flex-basis: 100%;
         display: flex;
         justify-content: center;
-        padding-left: 2px;
+        padding-left: 66px;
     }
     .lg li {
         list-style: none;
@@ -294,161 +346,77 @@ header {
 
 
 /* estilos de la seccion de informacion sobre la alimentacion */
-/* .content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    column-gap: 10px;
-} */
-
-.content-main{
-    grid-column: 1/3;
-    grid-row: 1/3;
-    /* margin: 1rem; */
+.content{
+    margin: 1.5rem;
 }
-.content-img{
-    grid-column: 1/3;
-    grid-row: 3/6;
-    margin: 1rem;
+.content-main h2 {
+    padding: 2rem 0 ;
 }
-.content-meal{
-    grid-column: 1/2;
-    grid-row: 6/8;
-    /* width: 205px; */
-    height: 261px;
-    margin: 0 1rem;
-}
-.content-quality{
-    grid-column: 2/3;
-    grid-row: 6/8;
-    /* width: 205px; */
-    height: 261px;
-}
-.content-health{
-    grid-column: 1/2;
-    grid-row: 8/10;
-    /* width: 205px; */
-    margin: 0 1rem;
-    height: 261px;
-    margin: 0 1rem;
-}
-.content-nutrition{
-    grid-column: 2/3;
-    grid-row: 8/10;
-    /* width: 205px; */
-    margin: 0 1rem;
-    height: 261px;
-}
-
-.content-button{
-    grid-column: 1/3;
-    grid-row: 10/11;
-    margin: 1rem;
-    text-align: center;
-}
-img {
-    width: 349px;
-    height: 324px;
-    align-items: center;
-    justify-content: center;
+.content-main p {
+    padding: 0 1rem;
 }
 img.content-comida-img {
-    margin: 0 auto;
+    width: 307px;
+    height: 366px;
+    object-fit: cover;
 }
-.content-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 12px; */
-    width: 93%;
-}
-.content-img-min {
-    width: 40px;
-    height: 40px;
-    margin: .5rem 0 0 5rem;
-}
-.max  {
-    margin: .5rem 0 0 5rem;
-}
-.maxm  {
-    margin: .5rem 0 0 6rem;
+img.content-comida-img {
+    width: 307px;
+    height: 366px;
+    object-fit: cover;
+    margin: 0 0 0 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .content-main{
-    padding: 0 2rem;
-}
-.content-main h2{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 27px;
-    padding: 1rem 0;
-}
+    width: 100%;
+    height: 100%;
 
-.content-main p{
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-    
 }
-
-
-.content-health p {
-    text-align: center;
-    padding: 0 .5rem 0 .5rem;
+.img {
+    width: 2rem;
+    height: 2rem;
 }
-
-
-.content-health h3 {
-    padding: 1rem;
-    text-align: center;
+.box{
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.content-nutrition p {
+.column {
+    width: 50%;
     text-align: center;
-    padding: 0 .5rem 0 .5rem;
+    /* padding: 2rem 1rem; */
 }
-
-.content-nutrition h3 {
-    padding: 1.6rem 1rem;
+.column h3 {
+    padding: 1rem 0 1rem 0;
+}
+.column p {
+    padding: 0 1rem 1.6rem 1rem;
+}
+.content-button {
+    width: 100%;
+    height: 100%;
     text-align: center;
-}
-.content-meal p {
-    text-align: center;
-    padding: 0 .5rem 0 .5rem;
-}
-
-.content-meal h3 {
-    padding: 1rem;
-    text-align: center;
-}
-.content-quality p {
-    text-align: center;
-    padding: 0 .5rem 0 .5rem;
-}
-
-.content-quality h3{
-    padding: 1.8rem 0 1.3rem 0;
-    text-align: center;
-}
-.grado-humano {
-    
-    width: 30vw;
-    height: 9vw;
-}
-.content-link {
-    text-align: center;
+    padding: 2rem;
 }
 .content-button a {
+    padding: 1.5rem .5rem;
     background-color: orangered;
-    padding: 1.2rem 2rem;
-    border-radius: .3rem;
-    color: white;
-    /* list-style: none; */
+    text-align: center;
     text-decoration: none;
-    font-size: 19px;
-    justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
+    color: white;
+    border-radius: .5rem;
+    border: radio;
+    font-family: sans-serif;
+    font-size: 16px;
+}   
+.content-img-m{
+    display: none;
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
 }
 /* aqui van los estilos de la seccion de informacion */
 section.veterinarians-box {
@@ -459,6 +427,10 @@ section.veterinarians-box {
 .title-veterinarians{
     display: flex;
     justify-content: center;
+}
+.title-veterinarians h2 {
+    color: white;
+    text-align: center;
 }
 
 
@@ -498,6 +470,7 @@ cite.text-veterinarian {
 
 
 
+
 /* aqui empieza todos los estil  */
 
     .footer {
@@ -523,7 +496,7 @@ cite.text-veterinarian {
     h2, h3 {
         text-transform: uppercase;
         font-size: 1rem;
-        color: white;
+        color: black;
     }
     .veterinarian {
         margin: 27px 0;
@@ -548,12 +521,14 @@ cite.text-veterinarian {
     blockquote.veterinarian {
         color: white;
         text-align: center;
+        padding: 0 3rem;
     }
     
     .information-veterinarians{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        
     }
     .veterinarian{
         display: flex;
@@ -566,6 +541,7 @@ cite.text-veterinarian {
         display: flex;
         justify-content: space-around;
         text-align: center;
+        padding: 1.4rem 3rem;
     }
     .footer {
         background-color: #173b33;
@@ -613,6 +589,7 @@ cite.text-veterinarian {
         margin-bottom: 25px;
         display: flex;
         flex-direction: column;
+        padding: 0 2rem;
     }
     
     .input-box-footer {
@@ -663,6 +640,7 @@ cite.text-veterinarian {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 24px;
+        padding: 2rem 2rem 3rem 2rem;
     }
     
     
@@ -722,99 +700,67 @@ cite.text-veterinarian {
 
     }
     /* inicio de estilos para la informacion de comida */
-    .content{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        /* column-gap: 10px; */
-        /* margin: 0 2rem; */
-    }
-    .content-img-min{
-        margin: 0 12rem;
-    }
-    .content-main{
-        grid-column: 1/5;
-        grid-row: 1/2;
-        margin: 3rem 1rem;
-    }
-    .content-main h2{
-        padding: 1rem 0 0 4rem;
-    }
-    .content-main p {
-        text-transform: uppercase;
-        font-size: 15px;
-        text-align: center;
-        width: 80rem;
-        padding: 1rem 23rem;
-    }
     .content-img{
-        grid-column:2/3;
-        grid-row: 2/4;
-        margin: 1rem;
+        display: none;
+    }
+    .content-img-m{
+        display: block;
+        width: 100%;
         
     }
-    .content-meal{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin: 1rem;
-        width: 417px;
-        height: 261px;
+    .box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
     }
-    .content-meal p {
+    .content-main h2 {
+        padding: 2rem 10rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+    .content-main p {
+        padding: 0px 13rem;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        margin-left: auto;
+        padding: 0 8rem 3rem 8rem;
+    }
+    .fila{
+        width: 25%;
+        flex-wrap: wrap;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         text-align: center;
-        margin: 0 4rem;
+        
     }
-    .content-quality{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        margin: 1rem;
-        width: 417px;
-        height: 261px;
+    .image{
+        width: 50%;
     }
-    .content-quality p {
-        text-align: center;
-        margin: 0 4rem;
+    img.content-comida-img {
+        width: 415px;
+        height: 366px;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .content-quality h3 {
-        padding: 0.5rem 0 1.3rem 0;
-        text-align: center;
+    .column p {
+        padding: 0 1rem 8.6rem 1rem;
     }
-    .content-health{
-        grid-column: 3/5;
-        grid-row: 2/3;
-        margin: 1rem;
-        width: 417px;
-        height: 261px;
-    }
-    .content-health p {
-        text-align: center;
-        margin: 0 4rem;
-    }
-    .grado-humano {
-        /* position: relative; */
-        /* width: 45vw; */
-        height: 4vw;
-    }
-    .content-nutrition{
-        grid-column: 3/5;
-        grid-row: 3/4;
-        margin: 1rem;
-        width: 417px;
-        height: 261px;
-    }
-    .content-nutrition p {
-        text-align: center;
-        margin: 0 6rem;
-    }
-    .content-nutrition h3 {
-        padding: 1.1rem 0 1.3rem 0;
-        text-align: center;
-    }
-    
-    .content-button{
-        grid-column: 2/3;
-        grid-row: 4/5;
-        margin: 5rem 0 0 2rem;
+    .content-button a {
+        padding: 1.5rem 2rem;
+        background-color: orangered;
+        /* text-align: center; */
+        /* text-decoration: none; */
+        color: white;
+        font-size: 20px;
+        border-radius: .5rem;
+        border: radio;
     }
      /* aqui comienza la seccion de informacion de especialistas */
 
@@ -835,7 +781,7 @@ cite.text-veterinarian {
     h2, h3 {
         text-transform: uppercase;
         font-size: 1rem;
-        color: white;
+        color: black;
     }
     .veterinarian {
         margin: 27px 0;
@@ -846,6 +792,9 @@ cite.text-veterinarian {
         letter-spacing: .5px;
         background-color: rgb(16, 51, 16);
     }
+    /* h2.title-veterinarians1 {
+        color: white;
+    } */
     /* aqui comienza los estilos del footer para una pantalla grande */
     .pre-footer{
         flex-direction:row ;
