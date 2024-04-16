@@ -824,6 +824,7 @@ cite.text-veterinarian {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
+        height: 100%;
     }
     .section1-imagen{
         width: 100%;
@@ -841,10 +842,12 @@ cite.text-veterinarian {
         background-color: #173b33;
         /* padding: 10px; */
         padding: 3rem 2rem;
+        height: auto;
     }
 
     .section1-box-img{
         width: 100%;
+        height: 100%;
     }
     .section1-imagen {
         margin: 3rem 0px 0px;
