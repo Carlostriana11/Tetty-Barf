@@ -6,7 +6,7 @@
 }
 
 p{
-    font-size: 25px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 h2,
@@ -28,7 +28,7 @@ header {
 }
 header {
     height: 60px;
-    background-color: #dbdbdb;
+    background-color: #ffffff;
     display: flex;
     padding: 0 20px;
     justify-content: space-between;
@@ -44,7 +44,11 @@ header {
     margin: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
+.logo-main{
+    width: 8rem;
+    height: 3.7rem;
+    object-fit: cover;
+}
 .logo a {
     color: black;
     text-decoration: none;
@@ -450,16 +454,17 @@ img.content-comida-img {
 }
 .column {
     width: 50%;
-    text-align: center;
+    /* text-align: center; */
     /* padding: 2rem 1rem; */
 }
 .column h3 {
     padding: 1rem 0 1rem 0;
     font-size: 1.1rem;
     font-weight: 900;
+    text-align: center;
 }
 .column p {
-    padding: 0 1rem 1.6rem 0rem;
+    padding: 0 1rem 1.6rem 1rem;
 }
 .content-button {
     width: 100%;
@@ -484,6 +489,12 @@ img.content-comida-img {
 .fila{
     display: flex;
     flex-wrap: wrap;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 /* estilos de la section4 */
 
