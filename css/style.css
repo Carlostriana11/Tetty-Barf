@@ -48,6 +48,7 @@ header {
     width: 8rem;
     height: 3.7rem;
     object-fit: cover;
+    padding: .3rem 0 .3rem 0;
 }
 .logo a {
     color: black;
