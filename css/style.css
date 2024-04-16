@@ -845,8 +845,10 @@ cite.text-veterinarian {
 
     .section1-box-img{
         width: 100%;
-
-
+    }
+    .section1-imagen {
+        margin: 3rem 0px 0px;
+        /* height: 28.5rem; */
     }
     /* inicio de estilos para la informacion de comida */
     .content-img{
@@ -859,7 +861,7 @@ cite.text-veterinarian {
     }
     .container {
         max-width: 90%;
-       
+    
     }
     .box{
         display: flex;
