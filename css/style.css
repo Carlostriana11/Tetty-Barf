@@ -358,10 +358,11 @@ header {
 }
 /* estilos de la seccion1 */
 .section-principal {
-    
     width: 100%;
+    height: 100%;
 
 }
+
 .section1-imagen{
     width: 100%;
     height: 100%;
@@ -828,7 +829,7 @@ cite.text-veterinarian {
     }
     .section1-imagen{
         width: 100%;
-        height: 91.6%;
+        height: 100%;
         object-fit: cover;
     }
     .section1-imagen {
@@ -838,22 +839,26 @@ cite.text-veterinarian {
         margin: 3rem 0 0 0;
     }
     .section1-box {
-        height: 554px;
+        /* height: 554px; */
         background-color: #173b33;
         /* padding: 10px; */
         padding: 3rem 2rem;
         height: auto;
+        width: 50%;
     }
 
     .section1-box-img{
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        
     }
     .section1-imagen {
         margin: 3rem 0px 0px;
-        height: 554px;
-        max-height: 83.5%;
+        height: -webkit-fill-available;
+        /* max-height: 83.5%; */
     }
+    /* .img1{
+        height: 606px;
+    } */
     /* inicio de estilos para la informacion de comida */
     .content-img{
         display: none;
