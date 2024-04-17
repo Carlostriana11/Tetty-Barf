@@ -35,9 +35,13 @@
 
 .span {
     font-size: 20px;
+<<<<<<< HEAD
 }
 
 
+=======
+  }
+>>>>>>> seccion5
 
 .tp {
     font-size: 60px;
@@ -76,6 +80,7 @@
 h2 {
     font-size: 45px;
     font-weight: bold;
+    margin-top: 10rem;
 }
 
 .c {
@@ -116,15 +121,24 @@ h2 {
         margin-bottom: 5rem;
     }
     .laimg {
-        width: 60rem;
+        width: 28rem;
         position: relative;
-        top: -233px;
+        top: -303px;
+        left: 25px;
+      }
+    .c, .d{
+        font-size: 25px;
+    }
+    h2 {
+        margin-top: 0;
     }
 }
 
 @media (min-width: 992){ 
     .laimg {
-        
+    width: 35rem;
+    top: -263px;
+    left: 65px;
     }
 }
 @media ( min-width: 1200px ) {
